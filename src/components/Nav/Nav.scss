@@ -4,26 +4,48 @@
   height: 10vh;
   background-color: rgb(0, 0, 0);
   display: flex;
+  justify-content: space-between;
   padding: 1rem;
   align-items: center;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.349);
 
   &__logo {
-    height: 3rem;
+    height: 1.5rem;
   }
 
   &__menu {
     display: flex;
-    width: 40%;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
 
   &__link {
+    text-transform: uppercase;
+    white-space: nowrap;
     margin-right: 2rem;
     text-decoration: none;
     color: azure;
     font-family: $font-primary;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 0.8rem;
+
+    &:hover {
+      color: rgb(168, 168, 168);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: $large) {
+  .nav {
+    &__logo {
+      height: 3rem;
+    }
+
+    &__link {
+      font-size: 1.5rem;
+    }
   }
 }
