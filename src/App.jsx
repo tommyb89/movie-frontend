@@ -1,7 +1,12 @@
 import "./App.scss";
+import MovieCatalogue from "./containers/MovieCatalogue/MovieCatalogue";
 
 function App() {
-  return <div className="App">hello</div>;
+  return (
+    <div>
+      <MovieCatalogue />
+    </div>
+  );
 }
 
 export default App;
