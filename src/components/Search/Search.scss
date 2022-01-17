@@ -1,0 +1,15 @@
+@use "../../assets/sass/variables" as *;
+
+.search-box {
+  &__input {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    width: 25rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: $large) {
+}
