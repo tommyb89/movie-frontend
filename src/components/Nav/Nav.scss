@@ -2,7 +2,7 @@
 
 .nav {
   height: 10vh;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.39);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -11,28 +11,27 @@
 
   &__logo {
     height: 1.5rem;
+    filter: invert(100%);
   }
 
   &__menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin-left: 1rem;
   }
 
   &__link {
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-right: 2rem;
+    padding-right: 0.5rem;
     text-decoration: none;
-    color: azure;
+    color: rgb(168, 168, 168);
     font-family: $font-primary;
-    font-weight: 500;
-    font-size: 0.8rem;
+    font-weight: 400;
+    font-size: 1rem;
 
     &:hover {
-      color: rgb(168, 168, 168);
+      color: rgb(31, 203, 209);
       text-decoration: underline;
     }
   }
@@ -40,12 +39,18 @@
 
 @media screen and (min-width: $large) {
   .nav {
+    padding: 3rem;
+
     &__logo {
       height: 3rem;
     }
 
+    &__menu {
+      gap: 3rem;
+    }
+
     &__link {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 }

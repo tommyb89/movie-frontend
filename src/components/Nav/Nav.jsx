@@ -1,8 +1,7 @@
 import React from "react";
 import "./Nav.scss";
-import Search from "../Search/Search";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/popcornbw.png";
 
 const Nav = () => {
   return (
@@ -12,19 +11,22 @@ const Nav = () => {
       </Link>
 
       <ul className="nav__menu">
-        <li>
-          <Link className="nav__link" to="/Home">
+        <li className="nav__item">
+          <Link className="nav__link" to="/">
             Home
           </Link>
         </li>
         <li>
+          <Link className="nav__link" to="/browse-movies">
+            Movies
+          </Link>
+        </li>
+        <li className="nav__item">
           <Link className="nav__link" to="/add-movie">
             Add Movie
           </Link>
         </li>
       </ul>
-      <div className="nav__dropdown"></div>
-      <Search />
     </nav>
   );
 };

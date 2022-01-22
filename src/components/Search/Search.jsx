@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Search = (props) => {
-  const { label, searchTerm, handleInput } = props;
+  const { searchTerm, handleInput } = props;
 
   return (
     <form className="search-box">

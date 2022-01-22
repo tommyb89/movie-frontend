@@ -1,0 +1,21 @@
+@use "../../assets/sass/variables" as *;
+
+.home {
+  height: calc(100vh - 10vh);
+
+  &__heading {
+    font-family: $font-primary;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: $large) {
+  .home {
+    &__heading {
+      font-size: 2rem;
+    }
+  }
+}
