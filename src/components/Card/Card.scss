@@ -27,5 +27,14 @@
 
   &__director {
     margin-bottom: 0.2rem;
+    font-style: italic;
+  }
+
+  &__span {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: rgb(143, 143, 143);
   }
 }

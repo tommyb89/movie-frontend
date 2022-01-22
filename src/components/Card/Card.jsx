@@ -14,6 +14,7 @@ const Card = () => {
       </table>
       <div className="card__summary">
         <p className="card__director">Director: Sam Mendez </p>
+        <span className="card__span">Summary</span>
         <p className="card__text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
           itaque quis aliquid sit dolores debitis corporis unde molestias earum.
