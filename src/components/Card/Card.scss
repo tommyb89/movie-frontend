@@ -67,14 +67,12 @@
   }
 
   &__summary {
-    margin: 0.6rem 0 0.2rem;
+    margin: 0.6rem 0 0.1rem;
     border-radius: 0.2rem;
-    text-decoration: underline;
     font-size: 0.8rem;
 
     &--right {
       float: right;
-      text-decoration: underline;
     }
   }
 
@@ -82,6 +80,15 @@
     font-size: 0.7rem;
     line-height: 1rem;
     color: rgb(189, 189, 189);
+  }
+
+  &__btn {
+    background-color: rgb(190, 167, 167);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -92,12 +99,12 @@
     font-size: 0.9rem;
 
     &__description {
+      padding: 1rem;
       display: flex;
       gap: 20px;
     }
 
     &__header {
-      color: #000000;
       letter-spacing: 1px;
       margin: 0px;
       font-size: 1.5rem;

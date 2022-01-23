@@ -1,13 +1,12 @@
 import React from "react";
 import "./Card.scss";
-import poster from "../../assets/images/matrix.jpg";
 
 const Card = (props) => {
-  const { title, plot, director, genre, year, rating } = props.movie;
+  const { title, plot, director, genre, year, rating, imgSource } = props.movie;
 
   return (
     <div className="card">
-      <img className="card__img" src={poster} alt="" />
+      <img className="card__img" src={imgSource} alt="" />
       <div className="card__description">
         <h1 className="card__header">{title}</h1>
         <ul className="card__info">
@@ -28,8 +27,6 @@ const Card = (props) => {
           SUMMARY <span className="card__summary--right">IMDb {rating}</span>
         </p>
         <p className="card__text">{plot}</p>
-
-        <button>remove</button>
       </div>
     </div>
   );

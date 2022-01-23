@@ -60,6 +60,11 @@ const Form = () => {
           placeholder="rating"
           onInput={(e) => setMovie({ ...movie, rating: e.target.value })}
         />
+        <input
+          type="text"
+          placeholder="image url"
+          onInput={(e) => setMovie({ ...movie, imgSource: e.target.value })}
+        />
         <button type="submit" className="btn">
           Submit
         </button>
