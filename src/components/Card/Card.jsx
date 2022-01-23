@@ -2,25 +2,22 @@ import React from "react";
 import "./Card.scss";
 import poster from "../../assets/images/matrix.jpg";
 
-const Card = () => {
+const Card = (props) => {
+  const { title, plot, director, genre, releaseYear, rating } = props.movie;
+
   return (
     <div className="card">
       <img className="card__img" src={poster} alt="" />
-      <h2 className="card__header">The Matrix</h2>
+      <h2 className="card__header">{title}</h2>
       <table className="card__data">
-        <td className="card__data__col">Sci-Fi | </td>
-        <td className="card__data__col">9.2 IMDB | </td>
-        <td className="card__data__col">2022</td>
+        <td className="card__data__col">{genre} | </td>
+        <td className="card__data__col">IMDb: {rating} | </td>
+        <td className="card__data__col">{releaseYear}</td>
       </table>
       <div className="card__summary">
-        <p className="card__director">Director: Sam Mendez </p>
+        <p className="card__director">Directed by: {director}</p>
         <span className="card__span">Summary</span>
-        <p className="card__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
-          itaque quis aliquid sit dolores debitis corporis unde molestias earum.
-          Aliquid recusandae autem consectetur, distinctio minus neque
-          architecto facere molestiae fugiat.
-        </p>
+        <p className="card__text">{plot}</p>
       </div>
     </div>
   );

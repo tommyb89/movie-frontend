@@ -1,8 +1,6 @@
 @use "../../assets/sass/variables" as *;
 
 .home {
-  height: calc(100vh - 10vh);
-
   &__heading {
     font-family: $font-primary;
     color: white;
