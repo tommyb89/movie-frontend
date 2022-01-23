@@ -1,4 +1,4 @@
-$blue: rgb(88, 40, 199);
+@use "../../assets/sass/variables" as *;
 
 .log-form {
   width: 40%;
@@ -47,17 +47,17 @@ $blue: rgb(88, 40, 199);
 
   .btn {
     display: inline-block;
-    background: $blue;
-    border: 1px solid darken($blue, 5%);
+    background: grey;
+    border: 1px solid darken(grey, 5%);
     padding: 0.5em 2em;
     color: white;
     margin-right: 0.5em;
     box-shadow: inset 0px 1px 0px fadeout(white, 80%);
     &:hover {
-      background: lighten($blue, 5%);
+      background: lighten(grey, 5%);
     }
     &:active {
-      background: $blue;
+      background: grey;
       box-shadow: inset 0px 1px 1px fadeout(black, 90%);
     }
     &:focus {
@@ -65,3 +65,6 @@ $blue: rgb(88, 40, 199);
     }
   }
 }
+
+// @media screen and (min-width: $large) {
+// }

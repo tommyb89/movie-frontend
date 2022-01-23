@@ -12,19 +12,24 @@ const Card = (props) => {
         <h1 className="card__header">{title}</h1>
         <ul className="card__info">
           <li className="card__item">
-            <span className="card__bold"> Directed by:</span> {director}
+            <span className="card__bold">Directed by: </span>
+            {director}
           </li>
           <li className="card__item">
-            Release year: <span className="card__bold"> {year}</span>
+            <span className="card__bold">Release year: </span>
+            {year}
           </li>
           <li className="card__item">
-            Genre: <span className="card__bold">{genre}</span>
+            <span className="card__bold">Genre: </span>
+            {genre}
           </li>
         </ul>
         <p className="card__summary">
-          Summary <span>IMDb {rating}</span>
+          SUMMARY <span className="card__summary--right">IMDb {rating}</span>
         </p>
         <p className="card__text">{plot}</p>
+
+        <button>remove</button>
       </div>
     </div>
   );
